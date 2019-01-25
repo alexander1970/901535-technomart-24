@@ -15,7 +15,7 @@
             <li>
                 <a class="btn-search" href="#">Поиск:</a>
                 <form class="form-search visually-hidden" action="http://echo.htmlacademy.ru" method="get">
-                    <input type="text" name="search" placeholder="Поиск">                    
+                    <input type="text" size="40" name="search" placeholder="Поиск">                    
                 </form>
             </li>
             <li><a class="btn-bookmarks" href="#">Закладки: 0</a></li>
@@ -197,10 +197,14 @@
                     </ul>
                     <div class="delivery">
                         <h3 id="delivery">ДОСТАВКА</h3>
-                        <p>Мы с удовольствием доставим Ваш товар прямо<br>
+                        <p>
+                            Мы с удовольствием доставим Ваш товар прямо<br>
                             к Вашему подъезду совершенно бсплатно!
+                        </p>
+                        <p>
                             Ведь мы не плохо зарабатываем,<br>
-                            подымая его на Ваш этаж!</p>                
+                            подымая его на Ваш этаж!
+                        </p>                
                     </div>                
                     <div class="guarantee">
                         <h3 id="guarantee">Гарантия</h3>
@@ -334,8 +338,9 @@
       
     <script>
         var search = document.querySelector(".btn-search");
-        var message = document.querySelector(".letter");
-          
+        var formSearch = document.querySelector(".form-search");
+        
+        var message = document.querySelector(".letter");          
         var popup = document.querySelector(".modal-letter");
         var close = popup.querySelector(".modal-close");
 
@@ -354,7 +359,8 @@
         
         search.addEventListener("click", function(evt){
             evt.preventDefault();
-            console.log("Клик по ссылке Поиск");
+            search.classList.add("btn-no");
+            formSearch.classList.remove("visually-hidden");
         });
 
         message.addEventListener("click", function(evt) {

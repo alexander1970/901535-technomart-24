@@ -87,9 +87,19 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation .btn-search { 
-    position: relative;
+    position: relative;   
     padding-left: 49px;
     padding-right: 185px;
+}
+
+.btn-no {
+    display: none;
+}
+
+.form-search {
+    width: 270px;
+    margin: 0;
+    padding: 0;
 }
 
 .btn-search::before {
@@ -1078,6 +1088,7 @@ h2 {
 
 .service p {
     font-size: 14px;    
+    width: 400px;
 }
 
 .service-item {
@@ -1117,10 +1128,10 @@ h2 {
 .service .delivery p,
 .service .guarantee p,
 .service .credit p {
+    width: 300px;
     font-size: 14px;
     line-height: 24px;
-    margin-top: 15px;
-    margin-left: 80px;
+    margin: 0 80px;    
 }
 
 .delivery {
