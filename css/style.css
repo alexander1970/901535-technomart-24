@@ -206,6 +206,7 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;    
 }
 
+.shop-navigation a,
 .user-navigation a {
     display: block;
     padding: 25px 20px;
@@ -213,6 +214,10 @@ input[type="radio"].visually-hidden {
 
     vertical-align: middle;
     color: #000000;
+}
+
+.shop-navigation a {
+    color: #ffffff;
 }
 
 .shop-navigation,
