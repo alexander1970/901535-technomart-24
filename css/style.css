@@ -1774,10 +1774,6 @@ address {
     border: 7px solid white;
 }
 
-.modal-map p {
-    margin: 0;
-}
-
 .modal-cart {              
     top: 50%;
     left: 50%;
