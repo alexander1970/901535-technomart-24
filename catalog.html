@@ -11,7 +11,7 @@
   <body>
     <header class="main-header">                           
         <ul class="site-navigation">
-            <li><div class="logo">ТЕХНОМАРТ</div></li>
+            <li><a class="logo" href="index.html">ТЕХНОМАРТ</a></li>
             <li>
                 <form class="form-search" action="http://echo.htmlacademy.ru" method="get">
                     <input type="text" size="40" name="search" placeholder="Поиск">                    
@@ -31,13 +31,13 @@
                 <p>г. Санкт-Петербург, ул. Б Конюшенная, д. 19/8</p> 
             </div>                
             <div class="user-ravshan">
-                <button class="ravshan" type="button">
-                    <span class="icon-user"></span>
+                <button class="ravshan" type="button">                    
                     Равшан Джамшутович
                     <span class="icon-login"></span>
                 </button> 
                 <div class="cabinet">
-                    <a class="btn" href="#">Мои заказы</a>
+                    <a class="btn" href="#">Мои заказы</a>  
+                    <div class="tochka"></div>
                     <a class="btn" href="#">Личный кабинет</a>
                 </div>
             </div>
@@ -133,7 +133,7 @@
                 </form>
             </section>        
 
-            <section class="popular-product">   
+            <section class="sorting-product">   
                 <div class="sort">
                     <p>СОРТИРОВКА</p>
                     <ul class="sort-filter">
@@ -141,16 +141,16 @@
                         <li><a href="#">ПО ТИПУ</a></li>
                         <li><a href="#">ПО ФУНКЦИОНАЛУ</a></li>
                     </ul>
-                    <div class="up-dir">
+                    <a class="up-dir" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                             <path fill="#ff0000" d="M5.5 0L0 10h11z"/>
                         </svg>
-                    </div>
-                    <div class="down-dir">
+                    </a>
+                    <a class="down-dir" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                             <path fill="#231F20" d="M5.5 10L0 0h11"/>
                         </svg>
-                    </div>
+                    </a>
                 </div>
                 
                 <div class="product">
@@ -288,8 +288,12 @@
                 <li><a href="#">Контакты</a></li>
             </ul>            
             <ul class="category-nav">
-                <li><p>г. Санкт-Петербург, ул. Б Конюшенная, д. 19/8
-                    +7(812)555-05-55</p></li>
+                <li>
+                    <address>
+                        г. Санкт-Петербург, ул. Б Конюшенная, д. 19/8
+                        +7(812)555-05-55
+                    </address>
+                </li>
                 <li><a href="#">Материалы</a></li>
                 <li><a href="#">Техника</a></li>
                 <li><a href="#">Инсрумент</a></li>
@@ -326,14 +330,14 @@
                 <div class="autor">
                     <p>
                         Разработано -- 
-                        <a href="htmlacademy.ru">htmlacademy.ru</a>
+                        <a href="http:\\www.htmlacademy.ru">htmlacademy.ru</a>
                     </p>
                 </div>
             </div>
         </div>
     </footer>
     
-    <section class="modal"> <!-- modal-cart -->
+    <section class="modal modal-cart">
         <h2 class="visually-hidden">Корзина</h2>
         <div class="product-cart">
             <div class="form-1"></div>            
@@ -346,6 +350,6 @@
         <button class="modal-close" type="button">Закрыть</button>
     </section>
       
-    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 </html>
